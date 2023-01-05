@@ -5,7 +5,7 @@ const Footer =()=>{
     return(
         <FooterContainer>
             <h3>The Odin Project 2022</h3>
-                <a href="https://github.com/warithad" target="_blank">
+                <a href="https://github.com/warithad/memory-card" target="_blank">
                     <FaGithub style={githubLogoStyle} />
                 </a>
         </FooterContainer>

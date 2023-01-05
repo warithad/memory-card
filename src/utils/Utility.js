@@ -1,6 +1,5 @@
 
 const shuffle =(array)=>{
-
     for(let i = 0; i < array.length; i++){
         array = swap(array, i, Math.floor(Math.random() * array.length));
     }

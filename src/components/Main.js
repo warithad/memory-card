@@ -8,7 +8,7 @@ const Main =()=>{
     const [pokemons, setPokemons] = useState([])
     const [highScore, setHighScore] = useState(0);
     const [currentScore, setCurrentScore] = useState(0);
-    const [clickedPokemons, setClickedPokemons] = useState(0);
+    const [clickedPokemons, setClickedPokemons] = useState([]);
 
 
     useEffect(() =>{
@@ -16,19 +16,19 @@ const Main =()=>{
              setPokemons(shuffle(await fetchPokemons()));
         }
         loadCards();
-    }, [])
+    }, [currentScore])
 
-    const onClickCard =(e)=>{
-        e.preventDefault();
+    const onClickCard =(pokemonName)=>{
+        console.log(pokemonName);
 
-        const pokemonName = e.target.name;
         if(clickedPokemons.includes(pokemonName)){
             reset();
         }
         else {
             setClickedPokemons(prevState => [...prevState, pokemonName])
-            setCurrentScore(currentScore+1);
-            setHighScore(Math.max(currentScore, highScore));
+            const newScore = currentScore + 1;
+            setHighScore(Math.max(newScore, highScore));
+            setCurrentScore(newScore); 
         }
     }
 
