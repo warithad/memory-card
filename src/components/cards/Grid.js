@@ -22,7 +22,10 @@ const Grid =({cards, onClickCard})=>{
 
 const GridContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr) ;
-
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    min-height: 100vh;
+    margin-bottom: 2rem;
 `
 export default Grid;

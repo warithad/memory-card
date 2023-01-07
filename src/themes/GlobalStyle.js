@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
         justify-content: space-between;\
         gap: 1.5rem;
     }
+
+    .card:hover{
+        background-color: #ccfbf1;
+    }
 `
 
 export default GlobalStyle;

@@ -72,6 +72,6 @@ const MainWrapper = styled.div`
     min-height: 90vh;
     display: flex;
     flex-direction: column;
-
+    gap: 3rem;
 `;
 export default Main;
