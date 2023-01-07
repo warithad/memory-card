@@ -16,7 +16,8 @@ const GlobalStyle = createGlobalStyle`
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between;\
+        gap: 1.5rem;
     }
 `
 

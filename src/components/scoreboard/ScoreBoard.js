@@ -11,6 +11,10 @@ const ScoreBoard =({highScore, currentScore})=>{
 
 const ScoreBoardWrapper = styled.div`
     display: flex;
+    justify-content: center;
+    font-family: arial;
+    font-size: 1.4vw;
+    gap: 2rem;
 `
 
 export default ScoreBoard;
